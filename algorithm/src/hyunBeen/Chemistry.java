@@ -78,7 +78,6 @@ public class Chemistry {
 
 					if (chemist[i].length() == 1){
 						statement = statement.replaceAll("(?i)" + chemist[i], "");
-
 					}
 
 					if (statement.equals(" ")) {
