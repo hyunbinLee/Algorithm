@@ -1,4 +1,4 @@
-package algorithm;
+package hyunBeen;
 
 public class Kakaoproblem2 {
 	

@@ -1,5 +1,6 @@
+package joungEun;
 import java.util.Scanner;
-//codeground 3.½ÃÇè°øºÎ
+//codeground 3.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 public class study{
 	static int Answer;
@@ -15,7 +16,7 @@ public class study{
 		for(int test_case = 0; test_case < T; test_case++) {
 
 
-			//½ÃÇèÁ¡¼ö ¹è¿­¿¡ ÀÔ·Â
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½Ô·ï¿½
 			int[] array = new int[N];
 			int[] study = new int[K];
 			for(int i = 0; i < array.length; i++){
@@ -27,7 +28,7 @@ public class study{
 			int a = array[0];
 			int b = 0;
 			
-			//½ÃÇèÁ¡¼ö ÃÖ´ë°ª ±¸ÇÏ±â
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ë°ª ï¿½ï¿½ï¿½Ï±ï¿½
 			for(int j = 1; j < array.length; j++){
 				if(array[j] > a){
 					a = array[j];
@@ -35,9 +36,9 @@ public class study{
 			}
 			
 			
-			//Á¤·Ä
+			//ï¿½ï¿½ï¿½ï¿½
 			
-			//½ÃÇèÁ¡¼ö ÇÕÇØ¼­ ÃÖ´ë°ª ±¸ÇÏ±â
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½Ö´ë°ª ï¿½ï¿½ï¿½Ï±ï¿½
 			for(int j = 0; j + 1< array.length; j++){
 				b = a + array[j];
 				
