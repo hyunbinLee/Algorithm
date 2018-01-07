@@ -11,7 +11,7 @@ public class Solution02 {
 		int[] tempx = new int[4];
 		int[] tempy = new int[4];
 		
-		//앞자리 다더한후 제일큰수두개합뺌 ex) 4 4 3   -> 4+4+3 - (4+4) = 3
+		//앞자리 다더한후 제일큰수두개합뺌  ex) 4 4 3   -> 4+4+3 - (4+4) = 3
 		for(int i=0; i<v.length; i++) {
 			for(int j=0; j<2; j++) {
 				if(j==0) { //x좌표
@@ -34,7 +34,6 @@ public class Solution02 {
 		int maxy = 0;
 		int minx = 0;
 		int miny = 0;
-		
 		
 		//여기서 검증이 제대로 안됨
 		for(int i=0; i<2; i++) {
