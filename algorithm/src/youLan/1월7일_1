@@ -6,21 +6,20 @@ class Solution {
         boolean answer = true;
         String[] str = null;
     		for (int i = 1; i < arr.length+1; i++) {        
-			    if (Arrays.asList(arr).contains(i)) {
-				    str[i] = "true";
-			    }else{
-                   str[i] = "false";
-                }
-            }
+			if (Arrays.asList(arr).contains(i)) {
+				str[i] = "true";
+			}else{
+                   		str[i] = "false";
+                	}
+            	}
         
-            for (int j = 1;j<arr.length+1;j++){
-                if(str[j]=="false"){
-                    answer=false;
-                }else{
-                    answer=true;
-                }
-            }
-
+            	for (int j = 1;j<arr.length+1;j++){
+                	if(str[j]=="false"){
+                    		answer=false;
+               		}else{
+			    answer=true;
+			}
+          	}
         return answer;
     }
 }
