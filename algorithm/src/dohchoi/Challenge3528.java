@@ -19,6 +19,7 @@ package dohchoi;
 
 // ¹ÌÇØ°á!!
 public class Challenge3528 {
+	
 	public static void main(String arg[]) {
 		int[][] v = {{1, 1}, {2, 2}, {1, 2}};
         int[] answer = new int[2];
