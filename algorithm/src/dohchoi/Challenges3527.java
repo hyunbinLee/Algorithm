@@ -8,6 +8,7 @@
      배열의 원소는 10만 이하의 자연수입니다.
 */
 // 결과 : 정확성 (O), 효율성(X)
+
 package dohchoi;
 
 import java.util.stream.IntStream;
