@@ -4,23 +4,13 @@ import java.util.Scanner;
 class Solution {
     public boolean solution(int[] arr) {
         boolean answer = true;
-        String[] str = null;
-    		for (int i = 1; i < arr.length+1; i++) {        
-			    if (Arrays.asList(arr).contains(i)) {
-				    str[i] = "true";
-			    }else{
-                   str[i] = "false";
-                }
-            }
-        
-            for (int j = 1;j<arr.length+1;j++){
-                if(str[j]=="false"){
-                    answer=false;
-                }else{
-                    answer=true;
-                }
-            }
-
+		Arrays.sort(arr);
+		
+		for (int i = 1; i < arr.length+1; i++) {
+			if(!(arr[i-1]==i)){
+				answer=false;
+			}
+		}         
         return answer;
     }
 }
