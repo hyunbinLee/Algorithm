@@ -8,8 +8,8 @@ public class Solution {
 		
 		boolean answer = true;
 		
-		//test case 1,2
-		//int[] num = {4,1,3};
+		// test case 1,2
+		// int[] num = {4,1,3};
 		int[] num = {4,1,3,2};
 		
 		/*Scanner scan = new Scanner(System.in);
