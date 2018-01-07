@@ -6,7 +6,7 @@ public class Solution02 {
 		
 		//앞자리 좌표를 비교해서 앞자리하나넣어주고 뒷자리 하나넣어줌
 		
-		int[][] v = new int[][] { {1,4} , {3,4} , {3,10} }; // {1.10} 나와야함
+		int[][] v = new int[][] { {1,4} , {3,4} , {3,10} };  // {1.10} 나와야함
 		
 		int[] tempx = new int[4];
 		int[] tempy = new int[4];
