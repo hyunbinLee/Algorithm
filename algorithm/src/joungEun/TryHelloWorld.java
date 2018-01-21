@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//programmers lvl.4 °¡Àå Å« Á¤»ç°¢Çü
+//programmers lvl.4 ê°€ì¥ í° ì •ì‚¬ê°í˜•
 
 class TryHelloWorld
 {
@@ -7,9 +7,9 @@ class TryHelloWorld
     {
      
         int answer = 0;
-        //2Â÷¿ø ¹è¿­ dp »ı¼º. boardº¸´Ù ±æÀÌ +1 (°ªÀ» Ã£À» ¶§ ´ëºñ)
+        //2ì°¨ì› ë°°ì—´ dp ìƒì„±. boardë³´ë‹¤ ê¸¸ì´ +1 (ê°’ì„ ì°¾ì„ ë•Œ ëŒ€ë¹„)
         int [][]dp = new int[board.length+1][board[0].length+1];
-        //boardÀÇ 'O'¸¦ Ã£¾Æ¼­ dp¿¡ 1³Ö±â
+        //boardì˜ 'O'ë¥¼ ì°¾ì•„ì„œ dpì— 1ë„£ê¸°
         for(int i=0; i<board.length; i++){
             for(int j=0; j<board[0].length; j++){
                 if(board[i][j]=='O'){
@@ -18,28 +18,28 @@ class TryHelloWorld
             }
         }
          
-        //dp¿¡ 1°ªÀ» ³Ö¾úÀ¸´Ï dp³»¿¡¼­ 1ÀÇ °ªÀ» °¡Áø Á¤»ç°¢Çü Ã£±â
+        //dpì— 1ê°’ì„ ë„£ì—ˆìœ¼ë‹ˆ dpë‚´ì—ì„œ 1ì˜ ê°’ì„ ê°€ì§„ ì •ì‚¬ê°í˜• ì°¾ê¸°
         for(int i=0; i<dp.length; i++){
             for(int j=0; j<dp[0].length; j++){
-            	//Á¤»ç°¢ÇüÀÌ ¸ğµÎ 1 ÀÌ»óÀÏ ¶§
+            	//ì •ì‚¬ê°í˜•ì´ ëª¨ë‘ 1 ì´ìƒì¼ ë•Œ
                 if(dp[i][j]>=1 && dp[i][j-1]>=1 && dp[i-1][j-1]>=1 && dp[i-1][j]>=1){
-                	//Math.min(x,y) x,yÁß ÀÛÀº°ª ¹İÈ¯
+                	//Math.min(x,y) x,yì¤‘ ì‘ì€ê°’ ë°˜í™˜
                 	/*   (w x)
-                	 *   (y z) Áß¿¡  w,x Áß ÀÛÀº°ª ¸ÕÀú ¹İÈ¯ÇÏ°í
-                	 * 		       ÀÌÈÄ¿¡ y¶û ¹İÈ¯ÇÑ °ª ÀÛÀº°ª ºñ±³ ÈÄ ÃÖÁ¾ ¹İÈ¯.
-                	 * 		   dp[i][j]¿¡ ÃÖÁ¾°ª + 1 ³Ö´Â´Ù
+                	 *   (y z) ì¤‘ì—  w,x ì¤‘ ì‘ì€ê°’ ë¨¼ì € ë°˜í™˜í•˜ê³ 
+                	 * 		       ì´í›„ì— yë‘ ë°˜í™˜í•œ ê°’ ì‘ì€ê°’ ë¹„êµ í›„ ìµœì¢… ë°˜í™˜.
+                	 * 		   dp[i][j]ì— ìµœì¢…ê°’ + 1 ë„£ëŠ”ë‹¤
                 	 */
                     dp[i][j] = Math.min(dp[i][j-1],Math.min(dp[i-1][j-1], dp[i-1][j]))+1; 
                 }
             }
         }
-
+	    
         //printArray(dp);
         
-        //dp³»¿¡¼­ °¡Àå Å« °ª Ã£±â
+        //dpë‚´ì—ì„œ ê°€ì¥ í° ê°’ ì°¾ê¸°
         for(int i=0; i<dp.length; i++){
             for(int j=0; j<dp[0].length; j++){
-            	//Math.max(x,y) x,yÁß Å« °ª ¹İÈ¯
+            	//Math.max(x,y) x,yì¤‘ í° ê°’ ë°˜í™˜
                 answer = Math.max(dp[i][j], answer);
             }
         }
