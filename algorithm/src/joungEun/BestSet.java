@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
-//programmers lvl.4 ìµœê³ ì˜ ì§‘í•©
+//programmers lvl.4 ÃÖ°íÀÇ ÁıÇÕ
 
 public class BestSet{
 
@@ -8,31 +8,33 @@ public class BestSet{
 		
         int[] set = null;
     
-        //ì§‘í•©ì´ ì—†ëŠ”ê²½ìš° nì´ së³´ë‹¤ í´ ë•Œ
+        //ÁıÇÕÀÌ ¾ø´Â°æ¿ì nÀÌ sº¸´Ù Å¬ ¶§
         if(n > s){
         	set = new int[1];
         	set[0] = -1;
         	return set;
         }
         
-        //ì§‘í•© ìˆëŠ” ê²½ìš°
+        //ÁıÇÕ ÀÖ´Â °æ¿ì
         set = new int[n];
-        int a = s/n;        
+        int x = s/n;        
         
         for(int i = 0; i< n; i++){
-        	set[i] = a;
+        	set[i] = x;
         }
 
-        for(int j = 0; j < s%n; j++){
+
+        for(int j = 0; j < s%n; j++)
         	set[n-j-1]++;
-	}        
+        }
+        
         
         return set;
 	}
     
     public static void main(String[] args) {
         BestSet c = new BestSet();
-        //ì•„ë˜ëŠ” í…ŒìŠ¤íŠ¸ë¡œ ì¶œë ¥í•´ ë³´ê¸° ìœ„í•œ ì½”ë“œì…ë‹ˆë‹¤.
+        //¾Æ·¡´Â Å×½ºÆ®·Î Ãâ·ÂÇØ º¸±â À§ÇÑ ÄÚµåÀÔ´Ï´Ù.
         System.out.println(Arrays.toString(c.bestSet(3,13)));
     }
 
