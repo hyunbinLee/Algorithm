@@ -3,7 +3,7 @@ package giyeol;
 public class Hopscotch {
     int hopscotch(int[][] board, int size) {
         int result = 0;
-        // 함수를 완성하세요.
+        //함수를 완성하세요.
         
         int[] rowTemp = new int[4];
         int[] rowMax = new int[size];
