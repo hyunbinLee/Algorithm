@@ -1,4 +1,4 @@
-package javalec.test1;
+package youLan;
 
 import java.util.Arrays;
 import java.util.Scanner;

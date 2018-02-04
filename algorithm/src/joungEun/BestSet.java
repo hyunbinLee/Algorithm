@@ -1,6 +1,6 @@
+package joungEun;
+
 import java.util.Arrays;
-import java.util.Scanner;
-//programmers lvl.4 최고의 집합
 
 public class BestSet{
 

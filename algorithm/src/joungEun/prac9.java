@@ -1,5 +1,7 @@
+package joungEun;
+
 import java.util.Scanner;
-//codeground 9.È­ÇÐÀÚÀÇ ¹®Àå
+//codeground 9.È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 public class prac9{
 	static int Answer;
@@ -31,7 +33,7 @@ public class prac9{
 
 			for(int i = 0; i < array.length; i++){
 				
-				//¹è¿­ - ¹®ÀÚ ºñ±³ ÈÄ ¹®ÀÚ¿­¿¡¼­ Áö¿ì±â
+				//ï¿½è¿­ - ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 				if(n.toLowerCase().contains(array[i].toLowerCase())){
 					n = n.replace(array[i], "");
 					contains = true;

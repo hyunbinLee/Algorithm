@@ -1,5 +1,6 @@
+package joungEun;
 import java.util.Scanner;
-//codeground 2.ÇÁ·Î±×·¡¹Ö °æÁø´ëÈ¸
+//codeground 2.ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸
 
 public class prac2{
 	static int Answer;
@@ -16,7 +17,7 @@ public class prac2{
 			int max;
 			
 			
-			//ÀÀ½ÃÀÚ Á¡¼ö ¹è¿­¿¡ ÀÔ·Â
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½Ô·ï¿½
 				for(int i = 0; i < array.length; i++){
 					array[i] = sc.nextInt();
 				}

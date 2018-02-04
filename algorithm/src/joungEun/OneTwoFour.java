@@ -1,6 +1,4 @@
-import java.util.Arrays;
-import java.util.Scanner;
-//programmers lvl.5 124³ª¶óÀÇ ¼ýÀÚ
+package joungEun;
 
 public class OneTwoFour{
 	public String change124(int n) {
@@ -32,7 +30,7 @@ public class OneTwoFour{
 		return answer;
 	}
 
-	// ¾Æ·¡´Â Å×½ºÆ®·Î Ãâ·ÂÇØ º¸±â À§ÇÑ ÄÚµåÀÔ´Ï´Ù.
+	// ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½×½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ï¿½Ô´Ï´ï¿½.
 	public static void main(String[] args) {
 		OneTwoFour oneTwoFour = new OneTwoFour();
 		System.out.println(oneTwoFour.change124(9));

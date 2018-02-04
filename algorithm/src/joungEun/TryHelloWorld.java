@@ -1,4 +1,5 @@
-import java.util.Scanner;
+package joungEun;
+
 //programmers lvl.4 가장 큰 정사각형
 
 class TryHelloWorld
