@@ -1,5 +1,4 @@
-import java.util.Scanner;
-//programmers lvl.6 °úÀÚ ¸¹ÀÌ ¸Ô±â
+package joungEun;
 
 public class EatCookie{
 	
@@ -7,12 +6,12 @@ public class EatCookie{
 	public static void main(String args[]) throws Exception	{
 	
 		int []cookies = {1, 4, 2, 6, 3, 4, 1, 5};
-		// ¸ÔÀº ÄíÅ° °³¼ö
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å° ï¿½ï¿½ï¿½ï¿½
 		int eat = 0;
 		
-		// Äí±â ¸À ´Ü°è
+		// ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ü°ï¿½
 		for(int j = 0; j < 6; j++){
-		// ÄíÅ°¿¡¼­ Ã£±â
+		// ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½
 		for(int i = 0; i < cookies.length; i ++){
 			if(cookies[i] == j){
 				eat++;

@@ -1,5 +1,4 @@
-import java.util.Scanner;
-//programmers lvl.6 과자 많이 먹기
+package joungEun;
 
 public class Expressions{
 	
