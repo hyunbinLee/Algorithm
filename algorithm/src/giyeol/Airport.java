@@ -10,7 +10,7 @@ public class Airport
     {
     	Airport test = new Airport();
         int tn = 3;
-        int [][]tcity = {{1,5},{2,2},{3,3}}; //위치,인구수
+        int [][]tcity = {{1,5},{2,2},{3,3}};  //위치,인구수
         System.out.println(test.chooseCity(tn,tcity));
     }
     
