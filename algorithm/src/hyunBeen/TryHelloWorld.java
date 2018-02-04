@@ -5,7 +5,7 @@ class TryHelloWorld {
 		int answer = 0;
 		int [] z = new int [city.length];
 		for (int i = 0; i < city.length; i++) {
-			for (int j = 0; j < city[i].length; j++) {
+			for (int j = 0; j < city.length; j++) {
 				int tmp = 0;
 				
 				if(j==i) continue;
@@ -18,6 +18,7 @@ class TryHelloWorld {
 				
 			}
 		}
+		
 		
 		for(int i = 0; i < z.length; i++){
 			if(i == z.length-1)
