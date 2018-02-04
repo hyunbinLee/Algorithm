@@ -58,9 +58,7 @@ class SamSung {
 						lastScore[j] = lastScore[i];
 						lastScore[i] = tmp;
 					}
-
 				}
-
 			}
 
 			for (int i = 0; i < numHuman; i++) {
