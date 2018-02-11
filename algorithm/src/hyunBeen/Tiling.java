@@ -24,7 +24,6 @@ public class Tiling {
 			
 		}
 		
-		
 		answer = Integer.parseInt(bb);
 		
 		
