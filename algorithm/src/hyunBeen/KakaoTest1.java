@@ -19,7 +19,6 @@ public class KakaoTest1 {
 		for (int i = 0; i < aa.length; i++) {
 
 			tmp[i] = aa[i] | bb[i];
-
 		}
 
 		for (int i = 0; i < tmp.length; i++) {
