@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class kakao01{
 	public static void main(String args[]){
-		
+	
 		Scanner sc = new Scanner(System.in);
 			int N = sc.nextInt();
 			int [] arr1 = new int [N];
