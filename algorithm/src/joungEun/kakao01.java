@@ -9,7 +9,7 @@ public class kakao01{
 			int [] arr2 = new int [N];
 			String [] result = new String [N];
 			
-			//arr1, arr2¿¡ °ª ³Ö±â
+			//arr1, arr2ì— ê°’ ë„£ê¸°
 			for(int i = 0; i < N; i++){
 				arr1[i] = sc.nextInt();
 			}
@@ -18,11 +18,11 @@ public class kakao01{
 			}
 		
 			
-			//arr1, arr2 ´õÇØ¼­ 2Áø¼ö·Î ¹Ù²Ù±â
+			//arr1, arr2 ë”í•´ì„œ 2ì§„ìˆ˜ë¡œ ë°”ê¾¸ê¸°
 			for(int j = 0; j < N; j++){
 		
 				int sum;
-				sum = arr1[j] + arr2[j];
+				sum = arr1[j] | arr2[j];
 				
 				String sum2;
 				sum2 = Integer.toBinaryString(sum);
