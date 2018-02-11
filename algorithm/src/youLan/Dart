@@ -1,0 +1,75 @@
+package javalec.test1;
+
+public class Dart {
+
+	public static void main(String[] args) {
+		String logic = "1D2S#10S";
+		String[] logic_sub = new String[logic.length()];
+		int[] index = new int[3];
+		int j=0;
+		double sum = 0;
+	
+		for(int i=0;i<logic.length();i++){
+			logic_sub[i] = logic.substring(i, i+1);
+		}
+		
+    // 10일경우
+		for(int i=0;i<logic.length();i++){
+			if(logic_sub[i].equals("1")&&logic_sub[i+1].equals("0")){
+				logic_sub[i]="10";
+				logic_sub[i+1]=logic_sub[i];
+			}
+		}
+		
+    //SDT연산
+		for(int i=0;i<logic.length();i++){
+			if(logic_sub[i].equals("S")){
+				index[j]=i-1;
+				j++;
+			}else if(logic_sub[i].equals("D")){
+				logic_sub[i-1] =  String.valueOf(Math.pow(Double.parseDouble(logic_sub[i-1]),2));
+				index[j]=i-1;
+				j++;
+			}else if(logic_sub[i].equals("T")){
+				logic_sub[i-1] =  String.valueOf(Math.pow(Double.parseDouble(logic_sub[i-1]),3));
+				index[j]=i-1;
+				j++;
+			}
+		}
+
+    //*연산
+		for(int i=0;i<logic.length();i++){
+			if(logic_sub[i].equals("*")){
+				if(i==2){
+					logic_sub[index[0]] = String.valueOf(Double.parseDouble(logic_sub[index[0]])*2);
+				}else if(i==4||i==5){
+					logic_sub[index[0]] = String.valueOf(Double.parseDouble(logic_sub[index[0]])*2);
+					logic_sub[index[1]] = String.valueOf(Double.parseDouble(logic_sub[index[1]])*2);
+				}else if(i==6||i==7||i==8){
+					logic_sub[index[1]] = String.valueOf(Double.parseDouble(logic_sub[index[1]])*2);
+					logic_sub[index[2]] = String.valueOf(Double.parseDouble(logic_sub[index[2]])*2);
+				}
+			}
+			
+      //#연산
+			if(logic_sub[i].equals("#")){
+				if(i==2){
+					logic_sub[index[0]] = String.valueOf(Double.parseDouble(logic_sub[index[0]])*(-1));
+				}else if(i==4||i==5){
+					logic_sub[index[1]] = String.valueOf(Double.parseDouble(logic_sub[index[1]])*(-1));
+				}else if(i==6||i==7||i==8){
+					logic_sub[index[2]] = String.valueOf(Double.parseDouble(logic_sub[index[2]])*(-1));
+				}
+			}
+		}
+		
+		//숫자 더하기
+		for(int i=0; i<index.length;i++){
+			sum += Double.parseDouble(logic_sub[index[i]]); 
+		}
+		
+		//출력
+		System.out.println(Integer.parseInt(String.valueOf(Math.round(sum))));
+	}
+
+}
