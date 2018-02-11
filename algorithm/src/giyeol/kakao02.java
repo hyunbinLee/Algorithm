@@ -7,7 +7,7 @@ public class kakao02 {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-		String dartResult = scan.next(); //문자열 받기 공백x
+		String dartResult = scan.next();  //문자열 받기 공백x
 		int level = 0;
 		
 		//기회는 세번
