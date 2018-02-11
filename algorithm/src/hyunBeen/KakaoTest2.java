@@ -37,7 +37,7 @@ public class KakaoTest2 {
 					count++;
 				}
 				else if(tmp == 'T')
-				{
+				{ 
 					number = number * number * number;
 					prenumber[count] = number;
 					count++;
