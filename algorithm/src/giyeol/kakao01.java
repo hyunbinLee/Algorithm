@@ -31,7 +31,7 @@ public class kakao01 {
 			} 
 		}
 		
-		int[] num = new int[tempNum.length()]; //이진수 담은 배열
+		int[] num = new int[tempNum.length()];  //이진수 담은 배열
 		
 		for(int i=tempNum.length()-1; i>=0; i--) {
 			num[(tempNum.length()-1)-i] = Integer.parseInt(String.valueOf(tempNum.charAt(i)));
