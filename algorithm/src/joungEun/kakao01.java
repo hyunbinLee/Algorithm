@@ -1,3 +1,5 @@
+package joungEun;
+
 import java.util.Scanner;
 
 public class kakao01{

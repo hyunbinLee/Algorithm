@@ -1,3 +1,5 @@
+
+package joungEun;
 import java.util.Scanner;
 
 public class kakao02{
@@ -13,12 +15,12 @@ public class kakao02{
 			
 			for(int i = 0; i < N.length; i++){
 				for(int j = 0; j < 10; j++){
-					//¼ýÀÚ°¡ µé¾î°¡¸é »õ·Î¿î ¶ó¿îµå ½ÃÀÛ
+					//ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½î°¡ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					if(N[i].equals(num[j])){
 						round++;		
 					}
 				}
-				//dart¿¡ ÇÑ°ÔÀÓ¾¿ ºÐ±â
+				//dartï¿½ï¿½ ï¿½Ñ°ï¿½ï¿½Ó¾ï¿½ ï¿½Ð±ï¿½
 				if(round == 1){
 					dart[0] += N[i];
 				}else if (round == 2){
@@ -30,7 +32,7 @@ public class kakao02{
 			
 			
 			
-			//Á¡¼ö°è»ê
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			for(int j = 0; j< dart.length; j++){
 				
 			}
