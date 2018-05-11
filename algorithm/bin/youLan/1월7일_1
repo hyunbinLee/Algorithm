@@ -1,0 +1,16 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+class Solution {
+    public boolean solution(int[] arr) {
+        boolean answer = true;
+		Arrays.sort(arr);
+		
+		for (int i = 1; i < arr.length+1; i++) {
+			if(!(arr[i-1]==i)){
+				answer=false;
+			}
+		}         
+        return answer;
+    }
+}

@@ -1,3 +1,5 @@
+package joungEun;
+
 import java.util.LinkedList;
 
 public class kakao03{
@@ -26,7 +28,7 @@ public class kakao03{
 			
 		}
 		
-		//Ä³½Ã»çÀÌÁî ÀÎ½ÄX ¶È°°Àº ±ÛÀÚ°¡ ³ª¿À¸é removeÇÏ°í addÇÑ°Å¸¸ ÀÎ½Ä
+		//Ä³ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î½ï¿½X ï¿½È°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ removeï¿½Ï°ï¿½ addï¿½Ñ°Å¸ï¿½ ï¿½Î½ï¿½
 		
 		
 	}
