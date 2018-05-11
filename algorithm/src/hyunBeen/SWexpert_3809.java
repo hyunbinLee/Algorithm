@@ -17,9 +17,6 @@ public class SWexpert_3809 {// 화섭이의 정수나열
 		
 		
 		testCase = aa.nextInt();
-		int lowestNum = 0;
-		int lowestIndex =0;
-		int lastest =0;
 		int result[] = new int[testCase];
 
 		for (int i = 0; i < testCase; i++) {
@@ -31,32 +28,34 @@ public class SWexpert_3809 {// 화섭이의 정수나열
 				num[j] = aa.nextInt();
 
 			} // 값 받기.
-
-			
-//			for(int j = 0; j < N; j++){
-//				
-//				if(num[j]<=lowestNum){
-//					lowestNum = num[j];//가장 작은 값 찾기.
-//					lowestIndex = j;
-//				}
-//				
-//			}
-			
 			for(int j = 0; j < comp.length; j++){
 				
 				comp[j] = j;
 			
 			}
 			
-			int k = 0;
-			for(int m = 1; m <= 3 ; m++)
+			for(int m = 1; m <= 3 ; m++){
 				for(int j = 0; j < N -m +1; j++){
 						int sum = 0;
-						
-						sum = 
-						
+					for(int k=0; k < m ; m++){
+						sum += num[j+k]*Math.pow(10.0, m-k+1);
+					}
+					check[sum] = true;
 				}
+				
 			}
+			
+			int j=0;
+			
+			for(int k = 0; k < 1000; k++){
+				if(check[k] == false){
+					result[i] = j;
+					break;
+				}
+				
+			}
+		}
+			
 			
 			
 
